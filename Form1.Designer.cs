@@ -40,6 +40,8 @@
          this.labelAutorInfo = new System.Windows.Forms.Label();
          this.buttonExit = new System.Windows.Forms.Button();
          this.pictureBoxMagazin = new System.Windows.Forms.PictureBox();
+         this.labelInformatiiAutor = new System.Windows.Forms.Label();
+         this.buttonRevenire = new System.Windows.Forms.Button();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMagazin)).BeginInit();
          this.SuspendLayout();
          // 
@@ -47,8 +49,11 @@
          // 
          this.buttonAfisareBicicleta.BackColor = System.Drawing.Color.LightSteelBlue;
          this.buttonAfisareBicicleta.Cursor = System.Windows.Forms.Cursors.Hand;
+         this.buttonAfisareBicicleta.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+         this.buttonAfisareBicicleta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+         this.buttonAfisareBicicleta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
          this.buttonAfisareBicicleta.ForeColor = System.Drawing.Color.DarkRed;
-         this.buttonAfisareBicicleta.Location = new System.Drawing.Point(47, 349);
+         this.buttonAfisareBicicleta.Location = new System.Drawing.Point(47, 388);
          this.buttonAfisareBicicleta.Name = "buttonAfisareBicicleta";
          this.buttonAfisareBicicleta.Size = new System.Drawing.Size(118, 23);
          this.buttonAfisareBicicleta.TabIndex = 0;
@@ -60,10 +65,13 @@
          // 
          this.buttonAdaugareBicicleta.BackColor = System.Drawing.Color.LightSteelBlue;
          this.buttonAdaugareBicicleta.Cursor = System.Windows.Forms.Cursors.Hand;
+         this.buttonAdaugareBicicleta.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+         this.buttonAdaugareBicicleta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+         this.buttonAdaugareBicicleta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
          this.buttonAdaugareBicicleta.ForeColor = System.Drawing.Color.DarkRed;
-         this.buttonAdaugareBicicleta.Location = new System.Drawing.Point(47, 291);
+         this.buttonAdaugareBicicleta.Location = new System.Drawing.Point(47, 262);
          this.buttonAdaugareBicicleta.Name = "buttonAdaugareBicicleta";
-         this.buttonAdaugareBicicleta.Size = new System.Drawing.Size(118, 23);
+         this.buttonAdaugareBicicleta.Size = new System.Drawing.Size(118, 28);
          this.buttonAdaugareBicicleta.TabIndex = 1;
          this.buttonAdaugareBicicleta.Text = "Adaugare Bicicleta";
          this.buttonAdaugareBicicleta.UseVisualStyleBackColor = false;
@@ -73,10 +81,13 @@
          // 
          this.buttonIncarcareDate.BackColor = System.Drawing.Color.LightSteelBlue;
          this.buttonIncarcareDate.Cursor = System.Windows.Forms.Cursors.Hand;
+         this.buttonIncarcareDate.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+         this.buttonIncarcareDate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+         this.buttonIncarcareDate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
          this.buttonIncarcareDate.ForeColor = System.Drawing.Color.DarkRed;
-         this.buttonIncarcareDate.Location = new System.Drawing.Point(47, 378);
+         this.buttonIncarcareDate.Location = new System.Drawing.Point(47, 347);
          this.buttonIncarcareDate.Name = "buttonIncarcareDate";
-         this.buttonIncarcareDate.Size = new System.Drawing.Size(118, 23);
+         this.buttonIncarcareDate.Size = new System.Drawing.Size(118, 27);
          this.buttonIncarcareDate.TabIndex = 2;
          this.buttonIncarcareDate.Text = "Incarcare Date";
          this.buttonIncarcareDate.UseVisualStyleBackColor = false;
@@ -86,10 +97,13 @@
          // 
          this.buttonSalvareFisier.BackColor = System.Drawing.Color.LightSteelBlue;
          this.buttonSalvareFisier.Cursor = System.Windows.Forms.Cursors.Hand;
+         this.buttonSalvareFisier.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+         this.buttonSalvareFisier.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+         this.buttonSalvareFisier.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
          this.buttonSalvareFisier.ForeColor = System.Drawing.Color.DarkRed;
-         this.buttonSalvareFisier.Location = new System.Drawing.Point(47, 320);
+         this.buttonSalvareFisier.Location = new System.Drawing.Point(47, 302);
          this.buttonSalvareFisier.Name = "buttonSalvareFisier";
-         this.buttonSalvareFisier.Size = new System.Drawing.Size(118, 23);
+         this.buttonSalvareFisier.Size = new System.Drawing.Size(118, 28);
          this.buttonSalvareFisier.TabIndex = 3;
          this.buttonSalvareFisier.Text = "Salvare Bicicleta";
          this.buttonSalvareFisier.UseVisualStyleBackColor = false;
@@ -99,10 +113,14 @@
          // 
          this.buttonAfisareCautare.BackColor = System.Drawing.Color.LightSteelBlue;
          this.buttonAfisareCautare.Cursor = System.Windows.Forms.Cursors.Hand;
+         this.buttonAfisareCautare.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+         this.buttonAfisareCautare.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+         this.buttonAfisareCautare.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+         this.buttonAfisareCautare.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.buttonAfisareCautare.ForeColor = System.Drawing.Color.DarkRed;
-         this.buttonAfisareCautare.Location = new System.Drawing.Point(47, 262);
+         this.buttonAfisareCautare.Location = new System.Drawing.Point(47, 426);
          this.buttonAfisareCautare.Name = "buttonAfisareCautare";
-         this.buttonAfisareCautare.Size = new System.Drawing.Size(118, 23);
+         this.buttonAfisareCautare.Size = new System.Drawing.Size(118, 27);
          this.buttonAfisareCautare.TabIndex = 4;
          this.buttonAfisareCautare.Text = "Cautare Bicicleta";
          this.buttonAfisareCautare.UseVisualStyleBackColor = false;
@@ -112,8 +130,11 @@
          // 
          this.buttonInfoAutor.BackColor = System.Drawing.Color.LightSteelBlue;
          this.buttonInfoAutor.Cursor = System.Windows.Forms.Cursors.Hand;
+         this.buttonInfoAutor.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+         this.buttonInfoAutor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+         this.buttonInfoAutor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
          this.buttonInfoAutor.ForeColor = System.Drawing.Color.DarkRed;
-         this.buttonInfoAutor.Location = new System.Drawing.Point(47, 407);
+         this.buttonInfoAutor.Location = new System.Drawing.Point(47, 473);
          this.buttonInfoAutor.Name = "buttonInfoAutor";
          this.buttonInfoAutor.Size = new System.Drawing.Size(118, 23);
          this.buttonInfoAutor.TabIndex = 5;
@@ -134,8 +155,11 @@
          // 
          this.buttonExit.BackColor = System.Drawing.Color.LightSteelBlue;
          this.buttonExit.Cursor = System.Windows.Forms.Cursors.Hand;
+         this.buttonExit.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+         this.buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+         this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
          this.buttonExit.ForeColor = System.Drawing.Color.DarkRed;
-         this.buttonExit.Location = new System.Drawing.Point(47, 436);
+         this.buttonExit.Location = new System.Drawing.Point(47, 502);
          this.buttonExit.Name = "buttonExit";
          this.buttonExit.Size = new System.Drawing.Size(118, 23);
          this.buttonExit.TabIndex = 7;
@@ -154,13 +178,38 @@
          this.pictureBoxMagazin.TabStop = false;
          this.pictureBoxMagazin.Click += new System.EventHandler(this.pictureBoxMagazin_Click);
          // 
+         // labelInformatiiAutor
+         // 
+         this.labelInformatiiAutor.AutoSize = true;
+         this.labelInformatiiAutor.Location = new System.Drawing.Point(176, 478);
+         this.labelInformatiiAutor.Name = "labelInformatiiAutor";
+         this.labelInformatiiAutor.Size = new System.Drawing.Size(0, 13);
+         this.labelInformatiiAutor.TabIndex = 9;
+         // 
+         // buttonRevenire
+         // 
+         this.buttonRevenire.BackColor = System.Drawing.Color.LightSteelBlue;
+         this.buttonRevenire.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+         this.buttonRevenire.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+         this.buttonRevenire.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+         this.buttonRevenire.ForeColor = System.Drawing.Color.DarkRed;
+         this.buttonRevenire.Location = new System.Drawing.Point(47, 539);
+         this.buttonRevenire.Name = "buttonRevenire";
+         this.buttonRevenire.Size = new System.Drawing.Size(118, 30);
+         this.buttonRevenire.TabIndex = 10;
+         this.buttonRevenire.Text = "Revenire";
+         this.buttonRevenire.UseVisualStyleBackColor = false;
+         this.buttonRevenire.Click += new System.EventHandler(this.buttonRevenire_Click);
+         // 
          // Form1
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.SystemColors.Control;
          this.BackgroundImage = global::Magazin_Biciclete.Properties.Resources.Untitled_design;
-         this.ClientSize = new System.Drawing.Size(813, 546);
+         this.ClientSize = new System.Drawing.Size(813, 577);
+         this.Controls.Add(this.buttonRevenire);
+         this.Controls.Add(this.labelInformatiiAutor);
          this.Controls.Add(this.pictureBoxMagazin);
          this.Controls.Add(this.buttonExit);
          this.Controls.Add(this.labelAutorInfo);
@@ -217,6 +266,8 @@
       private System.Windows.Forms.Label labelAutorInfo;
       private System.Windows.Forms.Button buttonExit;
       private System.Windows.Forms.PictureBox pictureBoxMagazin;
+      private System.Windows.Forms.Label labelInformatiiAutor;
+      private System.Windows.Forms.Button buttonRevenire;
    }
 }
 

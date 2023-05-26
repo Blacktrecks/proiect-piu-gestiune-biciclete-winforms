@@ -28,6 +28,7 @@ namespace Magazin_Biciclete
 
       private void Form1_Load(object sender, EventArgs e)
       {
+         DoubleBuffered = true;
          buttonAfisareBicicleta.FlatStyle = FlatStyle.Flat;
          buttonAdaugareBicicleta.FlatStyle = FlatStyle.Flat;
          buttonAfisareCautare.FlatStyle = FlatStyle.Flat;
@@ -35,12 +36,22 @@ namespace Magazin_Biciclete
          buttonSalvareFisier.FlatStyle = FlatStyle.Flat;
          buttonInfoAutor.FlatStyle = FlatStyle.Flat;
          buttonExit.FlatStyle = FlatStyle.Flat;
-        
-         
+         buttonRevenire.FlatStyle = FlatStyle.Flat;
+
+
       }
 
       private void buttonAfisareBicicleta_Click(object sender, EventArgs e)
       {
+         
+         buttonAdaugareBicicleta.Visible = false;
+         buttonSalvareFisier.Visible = false;
+         buttonInfoAutor.Visible = false;
+         buttonIncarcareDate.Visible = false;
+         buttonAfisareCautare.Visible = false;
+         buttonAfisareBicicleta.Visible = false;
+         pictureBoxMagazin.Visible = false;
+         buttonExit.Visible = false;
           CleanItems();
          var labelId = new System.Windows.Forms.Label();
          var labelBrand = new System.Windows.Forms.Label();
@@ -61,10 +72,16 @@ namespace Magazin_Biciclete
           labelId.Size = new System.Drawing.Size(23, 19);
           labelId.TabIndex = 4;
           labelId.Text = "Id";
+         
+         //labelId custom style
+         labelId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelId.ForeColor = System.Drawing.Color.White; // Set text color
+         labelId.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelId.Padding = new Padding(1); // Add padding for better spacing
          // 
          // labelBrand
-         // 
-          labelBrand.AutoSize = true;
+         //                                                             
+         labelBrand.AutoSize = true;
          labelBrand.BackColor = System.Drawing.Color.Transparent;
          labelBrand.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
           labelBrand.Location = new System.Drawing.Point(132, 9);
@@ -72,6 +89,14 @@ namespace Magazin_Biciclete
           labelBrand.Size = new System.Drawing.Size(56, 19);
           labelBrand.TabIndex = 5;
           labelBrand.Text = "Brand";
+
+
+           
+         //labelBrand custom style
+         labelBrand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelBrand.ForeColor = System.Drawing.Color.White; // Set text color
+         labelBrand.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelBrand.Padding = new Padding(1); // Add padding for better spacing
          // 
          // labelModel
          // 
@@ -83,10 +108,18 @@ namespace Magazin_Biciclete
           labelModel.Size = new System.Drawing.Size(55, 19);
           labelModel.TabIndex = 6;
           labelModel.Text = "Model";
+
+
+         //labelModel custom style
+         labelModel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelModel.ForeColor = System.Drawing.Color.White; // Set text color
+         labelModel.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelModel.Padding = new Padding(1); // Add padding for better spacing
+
          // 
          // labelPret
          // 
-          labelPret.AutoSize = true;
+         labelPret.AutoSize = true;
          labelPret.BackColor = System.Drawing.Color.Transparent;
          labelPret.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
           labelPret.Location = new System.Drawing.Point(427, 9);
@@ -94,10 +127,18 @@ namespace Magazin_Biciclete
           labelPret.Size = new System.Drawing.Size(40, 19);
           labelPret.TabIndex = 7;
           labelPret.Text = "Pret";
+
+
+         //labelPret custom style
+         labelPret.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelPret.ForeColor = System.Drawing.Color.White; // Set text color
+         labelPret.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelPret.Padding = new Padding(1); // Add padding for better spacing
+
          // 
          // labelTip
          // 
-          labelTip.AutoSize = true;
+         labelTip.AutoSize = true;
          labelTip.BackColor = System.Drawing.Color.Transparent;
          labelTip.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
           labelTip.Location = new System.Drawing.Point(1069, 9);
@@ -105,10 +146,19 @@ namespace Magazin_Biciclete
           labelTip.Size = new System.Drawing.Size(33, 19);
           labelTip.TabIndex = 8;
           labelTip.Text = "Tip";
+
+
+
+         //labelTip custom style
+         labelTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelTip.ForeColor = System.Drawing.Color.White; // Set text color
+         labelTip.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelTip.Padding = new Padding(1); // Add padding for better spacing
+
          // 
          // labelCuloare
          // 
-          labelCuloare.AutoSize = true;
+         labelCuloare.AutoSize = true;
          labelCuloare.BackColor = System.Drawing.Color.Transparent;
          labelCuloare.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
           labelCuloare.Location = new System.Drawing.Point(805, 9);
@@ -116,10 +166,18 @@ namespace Magazin_Biciclete
           labelCuloare.Size = new System.Drawing.Size(69, 19);
           labelCuloare.TabIndex = 9;
           labelCuloare.Text = "Culoare";
+
+
+         //labelCuloare custom style
+         labelCuloare.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelCuloare.ForeColor = System.Drawing.Color.White; // Set text color
+         labelCuloare.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelCuloare.Padding = new Padding(1); // Add padding for better spacing
+
          // 
          // labelStoc
          // 
-          labelStoc.AutoSize = true;
+         labelStoc.AutoSize = true;
          labelStoc.BackColor = System.Drawing.Color.Transparent;
          labelStoc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
           labelStoc.Location = new System.Drawing.Point(588, 9);
@@ -127,6 +185,13 @@ namespace Magazin_Biciclete
           labelStoc.Size = new System.Drawing.Size(44, 19);
           labelStoc.TabIndex = 10;
           labelStoc.Text = "Stoc";
+
+
+         //labelStoc custom style
+         labelStoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelStoc.ForeColor = System.Drawing.Color.White; // Set text color
+         labelStoc.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelStoc.Padding = new Padding(1); // Add padding for better spacing
 
          this.Controls.Add(labelStoc);
          this.Controls.Add(labelCuloare);
@@ -136,8 +201,9 @@ namespace Magazin_Biciclete
          this.Controls.Add(labelBrand);
          this.Controls.Add(labelId);
 
+         
 
-            this.labels.Add(labelStoc);
+         this.labels.Add(labelStoc);
             this.labels.Add(labelCuloare);
             this.labels.Add(labelTip);
             this.labels.Add(labelPret);
@@ -674,6 +740,7 @@ namespace Magazin_Biciclete
 
       private void buttonCautare_Click(object sender, EventArgs e)
       {
+         CleanItems();
             //buton afisare textBox cautare
             this.textBoxCautare = new System.Windows.Forms.TextBox();
             this.labelCautare = new System.Windows.Forms.Label();
@@ -725,8 +792,20 @@ namespace Magazin_Biciclete
 
         private void buttonCauta_Click(object sender, EventArgs e)
       {
-            //buton cautare
-            var criteria = textBoxCautare.Text;
+         pictureBoxMagazin.Visible = false;
+         buttonAdaugareBicicleta.Visible = false;
+         buttonSalvareFisier.Visible = false;
+         buttonInfoAutor.Visible = false;
+         buttonIncarcareDate.Visible = false;
+         buttonAfisareCautare.Visible = false;
+         buttonAfisareBicicleta.Visible = false;
+         pictureBoxMagazin.Visible = false;
+         buttonExit.Visible = false;
+         buttonCauta.Visible = false;
+         
+
+         //buton cautare
+         var criteria = textBoxCautare.Text;
             CleanItems();
             //buton afisare textBox cautare
             this.textBoxCautare = new System.Windows.Forms.TextBox();
@@ -780,82 +859,137 @@ namespace Magazin_Biciclete
 
          // labelId
          // 
-         labelId.BackColor = System.Drawing.Color.Transparent;
          labelId.AutoSize = true;
-            labelId.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            labelId.Location = new System.Drawing.Point(43, 9);
-            labelId.Name = "labelId";
-            labelId.Size = new System.Drawing.Size(23, 19);
-            labelId.TabIndex = 4;
-            labelId.Text = "Id";
+         labelId.BackColor = System.Drawing.Color.Transparent;
+         labelId.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         labelId.Location = new System.Drawing.Point(43, 9);
+         labelId.Name = "labelId";
+         labelId.Size = new System.Drawing.Size(23, 19);
+         labelId.TabIndex = 4;
+         labelId.Text = "Id";
+
+         //labelId custom style
+         labelId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelId.ForeColor = System.Drawing.Color.White; // Set text color
+         labelId.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelId.Padding = new Padding(1); // Add padding for better spacing
          // 
          // labelBrand
-         // 
-         labelBrand.BackColor = System.Drawing.Color.Transparent;
+         //                                                             
          labelBrand.AutoSize = true;
-            labelBrand.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            labelBrand.Location = new System.Drawing.Point(132, 9);
-            labelBrand.Name = "labelBrand";
-            labelBrand.Size = new System.Drawing.Size(56, 19);
-            labelBrand.TabIndex = 5;
-            labelBrand.Text = "Brand";
-         // 
-         // labelModel
-         // 
-         labelModel.BackColor = System.Drawing.Color.Transparent;
+         labelBrand.BackColor = System.Drawing.Color.Transparent;
+         labelBrand.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         labelBrand.Location = new System.Drawing.Point(132, 9);
+         labelBrand.Name = "labelBrand";
+         labelBrand.Size = new System.Drawing.Size(56, 19);
+         labelBrand.TabIndex = 5;
+         labelBrand.Text = "Brand";
+
+
+
+         //labelBrand custom style
+         labelBrand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelBrand.ForeColor = System.Drawing.Color.White; // Set text color
+         labelBrand.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelBrand.Padding = new Padding(1); // Add padding for better spacing
+                                              // 
+                                              // labelModel
+                                              // 
          labelModel.AutoSize = true;
-            labelModel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            labelModel.Location = new System.Drawing.Point(265, 9);
-            labelModel.Name = "labelModel";
-            labelModel.Size = new System.Drawing.Size(55, 19);
-            labelModel.TabIndex = 6;
-            labelModel.Text = "Model";
+         labelModel.BackColor = System.Drawing.Color.Transparent;
+         labelModel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         labelModel.Location = new System.Drawing.Point(265, 9);
+         labelModel.Name = "labelModel";
+         labelModel.Size = new System.Drawing.Size(55, 19);
+         labelModel.TabIndex = 6;
+         labelModel.Text = "Model";
+
+
+         //labelModel custom style
+         labelModel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelModel.ForeColor = System.Drawing.Color.White; // Set text color
+         labelModel.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelModel.Padding = new Padding(1); // Add padding for better spacing
+
          // 
          // labelPret
          // 
-         labelPret.BackColor = System.Drawing.Color.Transparent;
          labelPret.AutoSize = true;
-            labelPret.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            labelPret.Location = new System.Drawing.Point(427, 9);
-            labelPret.Name = "labelPret";
-            labelPret.Size = new System.Drawing.Size(40, 19);
-            labelPret.TabIndex = 7;
-            labelPret.Text = "Pret";
+         labelPret.BackColor = System.Drawing.Color.Transparent;
+         labelPret.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         labelPret.Location = new System.Drawing.Point(427, 9);
+         labelPret.Name = "labelPret";
+         labelPret.Size = new System.Drawing.Size(40, 19);
+         labelPret.TabIndex = 7;
+         labelPret.Text = "Pret";
+
+
+         //labelPret custom style
+         labelPret.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelPret.ForeColor = System.Drawing.Color.White; // Set text color
+         labelPret.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelPret.Padding = new Padding(1); // Add padding for better spacing
+
          // 
          // labelTip
          // 
-         labelTip.BackColor = System.Drawing.Color.Transparent;
          labelTip.AutoSize = true;
-            labelTip.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            labelTip.Location = new System.Drawing.Point(1069, 9);
-            labelTip.Name = "labelTip";
-            labelTip.Size = new System.Drawing.Size(33, 19);
-            labelTip.TabIndex = 8;
-            labelTip.Text = "Tip";
+         labelTip.BackColor = System.Drawing.Color.Transparent;
+         labelTip.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         labelTip.Location = new System.Drawing.Point(1069, 9);
+         labelTip.Name = "labelTip";
+         labelTip.Size = new System.Drawing.Size(33, 19);
+         labelTip.TabIndex = 8;
+         labelTip.Text = "Tip";
+
+
+
+         //labelTip custom style
+         labelTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelTip.ForeColor = System.Drawing.Color.White; // Set text color
+         labelTip.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelTip.Padding = new Padding(1); // Add padding for better spacing
+
          // 
          // labelCuloare
          // 
-         labelCuloare.BackColor = System.Drawing.Color.Transparent;
          labelCuloare.AutoSize = true;
-            labelCuloare.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            labelCuloare.Location = new System.Drawing.Point(805, 9);
-            labelCuloare.Name = "labelCuloare";
-            labelCuloare.Size = new System.Drawing.Size(69, 19);
-            labelCuloare.TabIndex = 9;
-            labelCuloare.Text = "Culoare";
+         labelCuloare.BackColor = System.Drawing.Color.Transparent;
+         labelCuloare.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         labelCuloare.Location = new System.Drawing.Point(805, 9);
+         labelCuloare.Name = "labelCuloare";
+         labelCuloare.Size = new System.Drawing.Size(69, 19);
+         labelCuloare.TabIndex = 9;
+         labelCuloare.Text = "Culoare";
+
+
+         //labelCuloare custom style
+         labelCuloare.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelCuloare.ForeColor = System.Drawing.Color.White; // Set text color
+         labelCuloare.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelCuloare.Padding = new Padding(1); // Add padding for better spacing
+
          // 
          // labelStoc
          // 
-         labelStoc.BackColor = System.Drawing.Color.Transparent;
          labelStoc.AutoSize = true;
-            labelStoc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            labelStoc.Location = new System.Drawing.Point(588, 9);
-            labelStoc.Name = "labelStoc";
-            labelStoc.Size = new System.Drawing.Size(44, 19);
-            labelStoc.TabIndex = 10;
-            labelStoc.Text = "Stoc";
+         labelStoc.BackColor = System.Drawing.Color.Transparent;
+         labelStoc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         labelStoc.Location = new System.Drawing.Point(588, 9);
+         labelStoc.Name = "labelStoc";
+         labelStoc.Size = new System.Drawing.Size(44, 19);
+         labelStoc.TabIndex = 10;
+         labelStoc.Text = "Stoc";
 
-            this.Controls.Add(labelStoc);
+
+         //labelStoc custom style
+         labelStoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; // Add a border
+         labelStoc.ForeColor = System.Drawing.Color.White; // Set text color
+         labelStoc.BackColor = System.Drawing.Color.DarkBlue; // Set background color
+         labelStoc.Padding = new Padding(1); // Add padding for better spacing
+
+
+         this.Controls.Add(labelStoc);
             this.Controls.Add(labelCuloare);
             this.Controls.Add(labelTip);
             this.Controls.Add(labelPret);
@@ -990,13 +1124,14 @@ namespace Magazin_Biciclete
        
          // Arata notificare prin ToolTip COntrol
          toolTip1.Show("Sectiune cu Informatii despre autor", buttonInfoAutor, 0, -50, 3000); // Afiseaza notificarea pentru 3 secunde
-                                                           
-         labelAutorInfo.Visible = !labelAutorInfo.Visible;
 
+         labelInformatiiAutor.BackColor = System.Drawing.Color.Transparent;
+         labelInformatiiAutor.Visible = !labelInformatiiAutor.Visible;
+         this.labelInformatiiAutor.ForeColor = System.Drawing.Color.White;
          // Seteaza textul din label cand e vizibil
-         if (labelAutorInfo.Visible)
+         if (labelInformatiiAutor.Visible)
          {
-            labelAutorInfo.Text = "Program Realizat de Roman Petrica";
+            labelInformatiiAutor.Text = "Program Realizat de Roman Petrica";
          }
       }
 
@@ -1013,6 +1148,20 @@ namespace Magazin_Biciclete
          pictureBoxMagazin.Size = new System.Drawing.Size(200, 200);
          pictureBoxMagazin.Image = Image.FromFile("\"C:\\Users\\petri\\Downloads\\wallpaperflare.com_wallpaper (2).jpg\"");
 
+      }
+
+      private void buttonRevenire_Click(object sender, EventArgs e)
+      {
+         CleanItems();
+         buttonAdaugareBicicleta.Visible = true;
+         buttonSalvareFisier.Visible = true;
+         buttonInfoAutor.Visible = true;
+         buttonIncarcareDate.Visible = true;
+         buttonAfisareCautare.Visible = true;
+         buttonAfisareBicicleta.Visible = true;
+         pictureBoxMagazin.Visible = true;
+         buttonExit.Visible = true;
+        
       }
    }
 }
