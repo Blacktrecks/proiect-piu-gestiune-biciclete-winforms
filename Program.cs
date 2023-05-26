@@ -15,10 +15,10 @@ namespace Magazin_Biciclete
 
             //test
             //program
-            magazinBiciclete.AdaugaBicicleta(new Bicicleta("tadashi", "ser", 123, true, Culoare.Alb, Tip.Pliabila));
-            magazinBiciclete.AdaugaBicicleta(new Bicicleta("komo", "axiom", 345, true, Culoare.Alb, Tip.Pliabila));
-            magazinBiciclete.AdaugaBicicleta(new Bicicleta("shi", "qwa", 221, true, Culoare.Alb, Tip.Electrica));
-            magazinBiciclete.AdaugaBicicleta(new Bicicleta("ashi", "ssser", 972, true, Culoare.Verde, Tip.Pliabila));
+            //magazinBiciclete.AdaugaBicicleta(new Bicicleta("tadashi", "ser", 123, true, Culoare.Alb, Tip.Pliabila));
+            //magazinBiciclete.AdaugaBicicleta(new Bicicleta("komo", "axiom", 345, true, Culoare.Alb, Tip.Pliabila));
+            //magazinBiciclete.AdaugaBicicleta(new Bicicleta("shi", "qwa", 221, true, Culoare.Alb, Tip.Electrica));
+            //magazinBiciclete.AdaugaBicicleta(new Bicicleta("ashi", "ssser", 972, true, Culoare.Verde, Tip.Pliabila));
          
 
             Application.EnableVisualStyles();
