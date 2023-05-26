@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Magazin_Biciclete
 {
@@ -897,5 +899,26 @@ namespace Magazin_Biciclete
         
 
     }
+
+      private void buttonInfoAutor_Click(object sender, EventArgs e)
+      {
+       
+         // Arata notificare prin ToolTip COntrol
+         toolTip1.Show("Sectiune cu Informatii despre autor", buttonInfoAutor, 0, -50, 3000); // Afiseaza notificarea pentru 3 secunde
+                                                           
+         labelAutorInfo.Visible = !labelAutorInfo.Visible;
+
+         // Seteaza textul din label cand e vizibil
+         if (labelAutorInfo.Visible)
+         {
+            labelAutorInfo.Text = "Program Realizat de Roman Petrica";
+         }
+      }
+
+      private void buttonIesire_Click(object sender, EventArgs e)
+      {
+         
+         Application.Exit();
+      }
    }
 }
